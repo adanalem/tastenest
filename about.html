@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Knewave&family=Poppins:wght@300;400;600;800&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .font-brand { font-family: 'Knewave', cursive; }
+        .font-heading { font-family: 'Oswald', sans-serif; }
+
+        /* Animation for floating elements */
+        .float-anim { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+    <title>About Mega | TasteNest</title>
+</head>
+<body class="bg-[#020617] text-white" id="top">
+
+<nav class="w-full bg-[#020617]/90 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+    <div class="flex items-center gap-3">
+      <img src="images/pngtree-food-logo-png-image_8239850.png" class="w-14 h-14 rounded-full border-2 border-yellow-400" alt="Logo">
+      <h1 class="text-3xl font-brand text-yellow-400 tracking-wider">TasteNest</h1>
+    </div>
+   
+
+    <ul class="hidden md:flex items-center gap-8 font-heading uppercase tracking-widest">
+      <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="about.html" class="text-yellow-400 border-b-2 border-yellow-400">About Us</a></li>
+      <li><a href="shope.html" class="hover:text-yellow-400 transition">Shop</a></li>
+      <li><a href="blog.html" class="hover:text-yellow-400 transition">Blogs</a></li>
+    </ul>
+
+    <button class="bg-[#EE284B] text-white px-8 py-2 rounded-full font-bold hover:scale-105 transition shadow-lg">
+        <a href="contact.html">Contact</a>
+    </button>
+  </div>
+</nav>
+
+<header class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1600')] bg-cover bg-center opacity-30"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#020617]/50 via-[#020617] to-[#020617]"></div>
+    
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+        <span class="bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-tighter mb-6 inline-block">Since 2010</span>
+        <h1 class="text-6xl md:text-9xl font-heading font-black uppercase italic leading-none mb-8">
+            The Legend of <br><span class="text-yellow-400">Great Taste</span>
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            We didn't just start a restaurant; we started a revolution. From a small street cart to 25 outlets, our secret has always been the same: Love & Spice.
+        </p>
+    </div>
+</header>
+
+<section class="py-10">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 bg-slate-900/50 border border-white/10 p-12 rounded-[3rem] backdrop-blur-sm">
+            <div class="text-center">
+                <h2 class="text-5xl font-heading font-black text-yellow-400">15K+</h2>
+                <p class="text-gray-500 uppercase text-sm font-bold mt-2">Daily Orders</p>
+            </div>
+            <div class="text-center border-l border-white/10">
+                <h2 class="text-5xl font-heading font-black text-[#EE284B]">50+</h2>
+                <p class="text-gray-500 uppercase text-sm font-bold mt-2">Master Chefs</p>
+            </div>
+            <div class="text-center border-l border-white/10">
+                <h2 class="text-5xl font-heading font-black text-yellow-400">25+</h2>
+                <p class="text-gray-500 uppercase text-sm font-bold mt-2">Locations</p>
+            </div>
+            <div class="text-center border-l border-white/10">
+                <h2 class="text-5xl font-heading font-black text-[#EE284B]">100%</h2>
+                <p class="text-gray-500 uppercase text-sm font-bold mt-2">Fresh Halal</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" class="rounded-[3rem] z-10 relative shadow-2xl border-4 border-white/5" alt="">
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-yellow-500 rounded-[3rem] -z-0 float-anim hidden md:block"></div>
+        </div>
+        <div>
+            <h2 class="text-5xl font-heading font-bold mb-8 uppercase italic">Our Mission: <br><span class="text-yellow-400">Quality Above All</span></h2>
+            <p class="text-gray-400 text-lg mb-8">Humara maqsad sirf khana bechna nahi, balkay har bite mein ek yaadgaar zayqa dena hai. We source our spices directly from the fields of Punjab and our meat is 100% organic.</p>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-4 text-xl"><span class="text-yellow-400 font-bold">✓</span> No Frozen Ingredients</li>
+                <li class="flex items-center gap-4 text-xl"><span class="text-yellow-400 font-bold">✓</span> Traditional Slow Cooking</li>
+                <li class="flex items-center gap-4 text-xl"><span class="text-yellow-400 font-bold">✓</span> Hygienic Packaging</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-6xl font-heading font-black uppercase italic mb-4">The Magic <span class="text-[#EE284B]">Hands</span></h2>
+            <p class="text-gray-500">Meet our world-class chefs who create the masterpieces.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group text-center">
+                <div class="relative overflow-hidden rounded-[3rem] border-4 border-yellow-500 mb-6">
+                    <img src="images/kitchen-81493_1280.jpg" class="w-full h-[400px] object-cover  group-hover:scale-110 transition duration-500" alt="">
+                </div>
+                <h3 class="text-3xl font-heading font-bold">Chef Marco</h3>
+                <p class="text-yellow-400 uppercase text-sm font-bold">Italian Head Chef</p>
+            </div>
+            <div class="group text-center">
+                <div class="relative overflow-hidden rounded-[3rem] mb-6 border-4 border-yellow-500">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500" class="w-full h-[400px] object-cover group-hover:scale-110 transition duration-500" alt="">
+                </div>
+                <h3 class="text-3xl font-heading font-bold">Chef Sultan</h3>
+                <p class="text-yellow-400 uppercase text-sm font-bold">Biryani Specialist</p>
+            </div>
+            <div class="group text-center">
+                <div class="relative overflow-hidden rounded-[3rem] border-4 border-yellow-500 mb-6">
+                    <img src="images/ai-generated-a-master-pastry-chef-intricately-decorating-a-multi-layered-cake-with-precision-and-flair-free-photo.jpg" class="w-full h-[400px] object-cover  group-hover:scale-110 transition duration-500" alt="">
+                </div>
+                <h3 class="text-3xl font-heading font-bold">Chef Sarah</h3>
+                <p class="text-yellow-400 uppercase text-sm font-bold">Pastry Expert</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-12 rounded-[3rem] bg-slate-900 border border-white/5 hover:border-yellow-400 transition group">
+                <span class="text-6xl mb-6 block group-hover:scale-110 transition">📦</span>
+                <h3 class="text-3xl font-heading font-bold mb-4 uppercase">Eco Packing</h3>
+                <p class="text-gray-400 leading-relaxed">We use 100% biodegradable and thermal-insulated packaging for better health.</p>
+            </div>
+            <div class="p-12 rounded-[3rem] bg-slate-900 border border-white/5 hover:border-[#EE284B] transition group">
+                <span class="text-6xl mb-6 block group-hover:scale-110 transition">⚡</span>
+                <h3 class="text-3xl font-heading font-bold mb-4 uppercase">Rapid Delivery</h3>
+                <p class="text-gray-400 leading-relaxed">Our bikers are trained to deliver your food within 30 minutes, or it's free!</p>
+            </div>
+            <div class="p-12 rounded-[3rem] bg-slate-900 border border-white/5 hover:border-yellow-400 transition group">
+                <span class="text-6xl mb-6 block group-hover:scale-110 transition">🌿</span>
+                <h3 class="text-3xl font-heading font-bold mb-4 uppercase">Farm to Table</h3>
+                <p class="text-gray-400 leading-relaxed">Ingredients are picked every morning from local organic farms for pure taste.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="bg-gradient-to-r from-yellow-500 to-orange-500 rounded-[4rem] p-12 md:p-24 text-center text-black relative overflow-hidden">
+        <div class="relative z-10">
+            <h2 class="text-5xl md:text-7xl font-heading font-black uppercase italic mb-8 leading-none">Ready to Taste <br>The Difference?</h2>
+            <a href="shope.html" class="inline-block bg-black text-white px-12 py-5 rounded-full text-xl font-bold hover:scale-110 transition shadow-2xl">ORDER ONLINE NOW</a>
+        </div>
+        <div class="absolute top-0 right-0 opacity-10 text-[15rem] font-black -mr-20 -mt-20">TASTE</div>
+    </div>
+</section>
+
+
+<footer class="bg-[#0f172a] text-gray-300 pt-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+          <img src="images/pngtree-food-logo-png-image_8239850.png" class="w-20 mb-4 rounded-full" alt="">
+          <p class="text-sm">Delicious meals, fresh ingredients, and fast delivery — served with quality you can trust.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+            <li><a href="shope.html" class="hover:text-yellow-400">Shop</a></li>
+            <li><a href="blog.html" class="hover:text-yellow-400">Blogs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Order Tracking</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Newsletter</h3>
+          <div class="flex">
+            <input type="email" placeholder="Your email" class="w-full px-4 py-2 bg-slate-800 rounded-l-md outline-none">
+            <button class="bg-yellow-500 text-black px-4 rounded-r-md font-bold">Go</button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-6 text-center">
+        <p>© 2026 TasteNest. All rights reserved.</p>
+        <a href="#top" class="inline-block mt-4 bg-yellow-500 text-black px-6 py-2 rounded-full font-bold">↑ Back to Top</a>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Oswald:wght@400;700&family=Poppins:wght@300;400;600;800&display=swap');
+    body { font-family: 'Poppins', sans-serif; background-color: #020617; color: white; scroll-behavior: smooth; }
+    .font-brand { font-family: 'Knewave', cursive; }
+    .font-heading { font-family: 'Oswald', sans-serif; }
+
+    .shop-card { transition: all 0.4s ease; border: 1px solid rgba(255,255,255,0.05); }
+    .shop-card:hover { transform: translateY(-15px); border-color: #eab308; box-shadow: 0 0 30px rgba(234, 179, 8, 0.2); }
+    
+    .floating-badge { animation: bounce 2s infinite; }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+  </style>
+  <title>Ultimate Mega Food Store | TasteNest</title>
+</head>
+
+<body>
+
+<nav class="w-full bg-[#020617]/95 backdrop-blur-xl sticky top-0 z-50 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="images/pngtree-food-logo-png-image_8239850.png" class="w-14 h-14 rounded-full border-2 border-yellow-400" alt="Logo">
+      <h1 class="text-3xl font-brand text-yellow-400">TasteNest</h1>
+    </div>
+    <ul class="hidden lg:flex gap-10 font-heading text-xl uppercase tracking-widest">
+      <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-yellow-400 transition">About</a></li>
+      <li><a href="shope.html" class="text-yellow-400 border-b-2 border-yellow-400 pb-1">Shop</a></li>
+      <li><a href="blog.html" class="hover:text-yellow-400 transition">Blogs</a></li>
+    </ul>
+    <div class="flex items-center gap-6">
+        <div class="relative">
+            <span class="text-3xl cursor-pointer">🛒</span>
+            <span class="absolute -top-2 -right-2 bg-red-600 text-[11px] font-bold px-2 py-0.5 rounded-full">12</span>
+        </div>
+        <button class="bg-[#EE284B] px-6 py-2 rounded-full font-bold hover:scale-105 transition">Order Now</button>
+    </div>
+  </div>
+</nav>
+
+<header class="py-24 bg-[url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600')] bg-fixed bg-center bg-cover relative">
+    <div class="absolute inset-0 bg-black/80"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-7xl md:text-9xl font-heading font-black italic uppercase text-yellow-400 leading-none">The Big Menu</h1>
+        <p class="text-2xl mt-4 text-white/80 font-light uppercase tracking-[10px]">Over 50+ Premium Dishes</p>
+    </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="mb-32">
+        <div class="flex justify-between items-end mb-12 border-b-2 border-yellow-500/30 pb-6">
+            <h2 class="text-5xl font-heading font-bold uppercase italic"><span class="text-yellow-400">01.</span> Signature Biryani</h2>
+            <p class="text-gray-400 hidden md:block">The Soul of Karachi</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/karachi-chicken-biryani-11-735x735.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Student Biryani</h3>
+                <p class="text-gray-500 text-sm mb-4">Single plate with extra spice & aloo.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$6.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/puulao.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Beef Yakhni Pulao</h3>
+                <p class="text-gray-500 text-sm mb-4">Slow cooked traditional recipe.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$8.50</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Mutton Hyderabadi</h3>
+                <p class="text-gray-500 text-sm mb-4">Fragrant rice with tender mutton.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$12.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Chicken Tikka Rice</h3>
+                <p class="text-gray-500 text-sm mb-4">Served with mint raita & salad.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$7.50</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-32">
+        <div class="flex justify-between items-end mb-12 border-b-2 border-red-500/30 pb-6">
+            <h2 class="text-5xl font-heading font-bold uppercase italic"><span class="text-red-500">02.</span> Grill & Karahi</h2>
+            <p class="text-gray-400 hidden md:block">Smokey & Sizzling</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/Butter-Chicken.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Butter Chicken</h3>
+                <p class="text-gray-500 text-sm mb-4">Boneless chicken in velvet sauce.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$10.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/OIP.webp" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Paneer Tikka</h3>
+                <p class="text-gray-500 text-sm mb-4">Cottage cheese grilled to perfection.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$6.50</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/indian-5093242_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Seekh Kabab (4pc)</h3>
+                <p class="text-gray-500 text-sm mb-4">Spicy minced beef kababs.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$9.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1512132411229-c30391241dd8?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Chicken Karahi</h3>
+                <p class="text-gray-500 text-sm mb-4">Desi ghee special white karahi.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$15.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-64 bg-yellow-500 rounded-[40px] mb-32 flex items-center justify-between px-10 overflow-hidden relative group">
+        <div class="z-10">
+            <h2 class="text-black text-5xl font-black uppercase font-heading">Midnight Deal!</h2>
+            <p class="text-black text-xl">Flat 50% OFF from 12AM to 3AM</p>
+            <button class="mt-4 bg-black text-white px-8 py-2 rounded-full font-bold">SHOP DEALS</button>
+        </div>
+        <img src="images/freepik__background__90128 1.png" class="h-80 group-hover:scale-110 transition duration-700 absolute right-0 bottom-0" alt="">
+    </div>
+
+    <div class="mb-32">
+        <div class="flex justify-between items-end mb-12 border-b-2 border-yellow-500/30 pb-6">
+            <h2 class="text-5xl font-heading font-bold uppercase italic"><span class="text-yellow-400">03.</span> Fast Food Mania</h2>
+            <p class="text-gray-400 hidden md:block">Burgers & Pizzas</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Monster Zinger</h3>
+                <p class="text-gray-500 text-sm mb-4">Triple patty with liquid cheese.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$7.50</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">BBQ Pizza (L)</h3>
+                <p class="text-gray-400 text-sm mb-4">Smokey sauce with ranch drizzle.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$18.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Hot Wings (12pc)</h3>
+                <p class="text-gray-500 text-sm mb-4">Crispy buffalo style wings.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$9.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/food-photography-2358904_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Club Sandwich</h3>
+                <p class="text-gray-500 text-sm mb-4">4 layers of egg & chicken.</p>
+                <div class="flex justify-between items-center"><span class="text-2xl font-black text-yellow-400">$5.00</span><button class="bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold">+</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-32">
+        <div class="flex justify-between items-end mb-12 border-b-2 border-green-500/30 pb-6">
+            <h2 class="text-5xl font-heading font-bold uppercase italic"><span class="text-green-500">04.</span> Sides & Snacks</h2>
+            <p class="text-gray-400 hidden md:block">Quick Bites</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/ai-generated-8540840_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Samosa Plate</h3>
+                <span class="text-2xl font-black text-yellow-400">$2.00</span>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/ai-generated-8527044_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">French Fries</h3>
+                <span class="text-2xl font-black text-yellow-400">$3.00</span>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/spring-rolls-8135469_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Chicken Rolls</h3>
+                <span class="text-2xl font-black text-yellow-400">$4.50</span>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/cheese-toast-4873884_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Garlic Bread</h3>
+                <span class="text-2xl font-black text-yellow-400">$3.50</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-32">
+        <div class="flex justify-between items-end mb-12 border-b-2 border-blue-500/30 pb-6">
+            <h2 class="text-5xl font-heading font-bold uppercase italic"><span class="text-blue-500">05.</span> Chilled Drinks</h2>
+            <p class="text-gray-400 hidden md:block">Beat the Heat</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Vanilla Shake</h3>
+                <span class="text-2xl font-black text-yellow-400">$4.00</span>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/cold-drink-7074305_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Cold Coffee</h3>
+                <span class="text-2xl font-black text-yellow-400">$5.00</span>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="https://images.unsplash.com/photo-1624517452488-04869289c4ca?w=500" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Mint Margarita</h3>
+                <span class="text-2xl font-black text-yellow-400">$3.50</span>
+            </div>
+            <div class="shop-card bg-slate-900 rounded-3xl p-5">
+                <img src="images/beverage-4908765_1280.jpg" class="w-full h-52 object-cover rounded-2xl mb-4" alt="">
+                <h3 class="text-xl font-bold mb-2">Oreo Shake</h3>
+                <span class="text-2xl font-black text-yellow-400">$6.00</span>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<footer class="bg-[#0f172a] text-gray-300 pt-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+          <img src="images/pngtree-food-logo-png-image_8239850.png" class="w-20 mb-4 rounded-full" alt="">
+          <p class="text-sm">Delicious meals, fresh ingredients, and fast delivery — served with quality you can trust.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+            <li><a href="shope.html" class="hover:text-yellow-400">Shop</a></li>
+            <li><a href="blog.html" class="hover:text-yellow-400">Blogs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Order Tracking</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Newsletter</h3>
+          <div class="flex">
+            <input type="email" placeholder="Your email" class="w-full px-4 py-2 bg-slate-800 rounded-l-md outline-none">
+            <button class="bg-yellow-500 text-black px-4 rounded-r-md font-bold">Go</button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-6 text-center">
+        <p>© 2026 TasteNest. All rights reserved.</p>
+        <a href="#top" class="inline-block mt-4 bg-yellow-500 text-black px-6 py-2 rounded-full font-bold">↑ Back to Top</a>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
