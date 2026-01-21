@@ -57,6 +57,4 @@ An immersive "About Us" section that builds trust through professional photograp
 
 
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-username/tastenest.git](https://github.com/your-username/tastenest.git)
+
